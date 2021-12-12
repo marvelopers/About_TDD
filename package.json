@@ -1,0 +1,26 @@
+{
+  "name": "About_TDD",
+  "version": "1.0.0",
+  "description": "TDD : 테스트 주도 개발",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marvelopers/About_TDD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marvelopers/About_TDD/issues"
+  },
+  "homepage": "https://github.com/marvelopers/About_TDD#readme",
+  "dependencies": {
+    "@types/jest": "^27.0.3"
+  },
+  "devDependencies": {
+    "jest": "^27.4.4"
+  }
+}
