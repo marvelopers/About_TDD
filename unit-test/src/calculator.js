@@ -12,6 +12,10 @@ class Calculator{
   }
 
   add(num){
+    const sum = this.value + num;
+    if(sum > 10000000000) {
+      throw new Error('Value can not be greater than 10000000000');
+    }
     this.value = this.value + num;
   }
 

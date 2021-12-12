@@ -21,22 +21,29 @@ describe('Calculator',()=>{
     expect(calc.value).toBe(0);
   })
 
-  it('subtract', ()=>{
-    calc.set(2)
-    calc.add(3)
-    expect(calc.value).toBe(-1);
-  })
-
-  it('multiply', ()=>{
-    calc.set(2)
-    calc.add(3)
-    expect(calc.value).toBe(6);
-  })
-
+  
   it('add', ()=>{
     calc.set(2)
     calc.add(3)
     expect(calc.value).toBe(5);
+  })
+
+  it('add should throw an error if value is greater than 10000000000', ()=>{
+    expect(()=>{
+      calc.add(10000000001)
+    }).toThrow('Value can not be greater than 10000000000')
+  })
+
+  it('subtract', ()=>{
+    calc.set(2)
+    calc.subtract(3)
+    expect(calc.value).toBe(-1);
+  })
+  
+  it('multiply', ()=>{
+    calc.set(2)
+    calc.multiply(3)
+    expect(calc.value).toBe(6);
   })
 
   describe('divides', () => {
@@ -56,7 +63,7 @@ describe('Calculator',()=>{
     it('2/2 === Infinity', ()=>{
       calc.set(2)
       calc.divide(2)
-      expect(calc.value).toBe(0);
+      expect(calc.value).toBe(1);
 
     })
   })
