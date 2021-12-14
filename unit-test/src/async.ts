@@ -1,4 +1,4 @@
-const fetchCoin = (error) => {
+const fetchCoin = (error: string | Error) => {
   if(error === 'error'){
     return Promise.reject('network error')
   }
