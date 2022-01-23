@@ -21,7 +21,7 @@
     "@types/jest": "^27.0.3"
   },
   "devDependencies": {
-    "jest": "^27.4.4",
+    "jest": "^27.4.7",
     "typescript": "^4.5.4"
   }
 }

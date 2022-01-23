@@ -1,7 +1,7 @@
-const add = require('../add.js');
+const add = require("../add.ts");
 
-test('',()=>{
-  expect(add(1,2)).toBe(3)
-})
+test("", () => {
+  expect(add(1, 2)).toBe(3);
+});
 
-// const sum 
+// const sum
