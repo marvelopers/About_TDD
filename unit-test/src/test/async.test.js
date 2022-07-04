@@ -7,13 +7,20 @@ describe("Async", () => {
     });
   });
 
+  it("async", (done) => {
+    fetchCoin().then((item) => {
+      expect(item).toEqual({ item: "bitcoin", price: 60000000 });
+      done();
+    });
+  });
+
   it("async-return", () => {
     return fetchCoin().then((item) => {
       expect(item).toEqual({ item: "bitcoin", price: 60000000 });
     });
   });
 
-  it("async-await", () => {
+  it("async-await", async () => {
     const coin = await fetchCoin();
     expect(coin).toEqual({ item: "bitcoin", price: 60000000 });
   });
