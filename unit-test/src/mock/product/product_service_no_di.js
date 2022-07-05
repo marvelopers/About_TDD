@@ -1,7 +1,7 @@
-const ProductClient = require('./product_client');
+const ProductClient = require("./product_client");
 class ProductService {
   constructor() {
-    this.productClient = new ProductClient();
+    this.productClient = new ProductClient(); //의존성 주입 원칙에 위배
   }
 
   fetchAvailableItems() {
